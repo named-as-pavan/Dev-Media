@@ -12,9 +12,11 @@ export const SocketContextProvider = ({ children }) => {
     const user = useRecoilValue(userAtom);
     const [onlineUsers, setOnlineUsers] = useState([]);
 
+    const MODE = import.meta.env.MODE
+
     useEffect(() => {
         if (user?._id) {
-            const newSocket = io(process.env.URL || "http://localhost:5000", {
+            const newSocket = io(MODE === "development" ? "/" : "http://localhost:5000", {
                 query: {
                     userId: user._id,
                 },
