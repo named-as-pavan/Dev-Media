@@ -59,7 +59,7 @@ const PostPage = () => {
       setPosts([]);
 
       try {
-        console.log("sent");
+        // console.log("sent");
         const res = await fetch(`/api/posts/${pid}`);
         console.log(pid);
         const data = await res.json();
@@ -73,7 +73,7 @@ const PostPage = () => {
         showToast("Error", error.message, "error");
       }
     };
-    console.log(user);
+    // console.log(user);
 
     getPost();
   }, [showToast, pid, setPosts]);

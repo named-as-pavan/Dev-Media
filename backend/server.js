@@ -56,6 +56,6 @@ if(process.env.NODE_ENV === "production"){
 
 
 server.listen(port, () => {
-  console.log(process.env.JWT_SECRET)
+
   console.log(`Example app listening on port http://localhost:${port}`)
 })

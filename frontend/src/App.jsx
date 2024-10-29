@@ -8,7 +8,6 @@ import UserPage from "./pages/UserPage";
 import PostPage from "./pages/PostPage";
 import ChatPage from "./pages/ChatPage";
 import FootNavigation from "./components/FootNavigation";
-import Header from "./components/Header";
 import AccountSettings from "./components/AccountsSetting";
 import { selectedConversationAtom } from "../atom/messagesAtom";
 import CreatePost from "./components/CreatePost";
@@ -25,7 +24,6 @@ function App() {
   return (
     <Box position="relative" w="full">
       <Container maxW={{ base: "800px", md: "1200px" }}>
-        <Header />
         <Routes>
           <Route
             path="/"

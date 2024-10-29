@@ -191,6 +191,3 @@ export { createPost ,getPost ,deletePost,likeUnlikePost, replyToPostPage,getFeed
 
 
 
-
-// res.status(500).json({message:error.message})
-//         console.log(error.message)

@@ -70,7 +70,7 @@ const CreatePost = () => {
                 },
                 body: JSON.stringify({postedBy:user._id, text:postText, img:imgUrl})
             })
-            console.log({ postedBy: user._id, text: postText, img: imgUrl });
+            // console.log({ postedBy: user._id, text: postText, img: imgUrl });
     
             const data = await res.json()
     
